@@ -5,6 +5,7 @@
 SageMaker는 기본적으로 단일 호스팅 인스턴스에서 단일 ML 모델만 배포하는 단일 모델 엔드포인트(SME; Single-Model-Endpoint)를 제공하지만, 유스케이스에 따라 동일 사양의 인스턴스에서 논리적인 엔트포인트 뒤에 호스팅할 여러 모델들을 지정하는 다중 모델 엔드포인트(MME: Multi-Model Endpoint) 기능도 지원하고 있습니다. 2021년부터 NVIDIA Triton Inference 기반의 GPU도 지원하기 때문에 sLLM(Small Large Language Model)이나 Stable Diffusion 등의 여러 모델들을 단일 호스팅 인스턴스에서 서빙할 수 있습니다. MME를 사용하면 엔드포인트 뒤에서 여러 모델에 걸쳐 GPU 인스턴스를 공유하고 들어오는 트래픽에 따라 모델을 동적으로 로드 및 언로드합니다. 따라서, 큰 비용 부담 없이 최적의 가격 대비 성능을 달성할 수 있습니다.
 
 ## Getting Started
+- [`0_setup.ipynb`](0_setup.ipynb) 실행
 - [`1_mme-hosting-stable-diffusion.ipynb`](1_mme-hosting-stable-diffusion.ipynb) 실행
 - (Optional) [`2_simple-test-tritonclient.ipynb`](2_simple-test-tritonclient.ipynb) 실행
 
